@@ -38,8 +38,8 @@ stages:
     - script: |
         npm install
         npm update
-        npm run build --if-present
-        npm run test --if-present
+        npm run build
+        npm run test
       displayName: 'npm install, build and test'
 
     - task: ArchiveFiles@2
